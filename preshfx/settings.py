@@ -29,10 +29,10 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-# ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = ["127.0.0.1", "web-production-e5ee.up.railway.app", "www.goldmanpatriot.us"]
+# ALLOWED_HOSTS = ["*"] https://web-production-731f.up.railway.app
+ALLOWED_HOSTS = ["127.0.0.1", "web-production-731f.up.railway.app", "www.goldmanpatriot.us"]
 
-CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1", "https://www.goldmanpatriot.us", "https://web-production-e5ee.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1", "https://www.goldmanpatriot.us", "https://web-production-731f.up.railway.app"]
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
