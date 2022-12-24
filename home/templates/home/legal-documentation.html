@@ -1,0 +1,312 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Premium HTML5 Template by Indonez">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, javascript">
+    <meta name="author" content="Indonez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FCB42D" />
+    <!-- Site Properties -->
+    <title>Legal docs - Equity HTML5 Template</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- critical preload -->
+    <link rel="preload" href="{% static 'js/vendors/uikit.min.js' %}" as="script">
+    <link rel="preload" href="{% static 'css/vendors/uikit.min.css' %}" as="style">
+    <link rel="preload" href="{% static 'css/style.css' %}" as="style">
+    <!-- icon preload -->
+    <link rel="preload" href="{% static 'fonts/fa-brands-400.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/fa-solid-900.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <!-- font preload -->
+    <link rel="preload" href="{% static 'fonts/archivo-v9-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/archivo-v9-latin-300.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/archivo-v9-latin-700.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <!-- Favicon and apple icon -->
+    <link rel="shortcut icon" href="{% static 'img/godpips_favicon.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'img/godpips_favicon.png' %}">
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/vendors/uikit.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/editingstyle.css' %}">
+
+    <style>
+        .social-link {
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 10px;
+            padding: 8px 10px;
+        }
+
+        .social-link:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .fab-icon {
+            font-size: 15px;
+            color: #fff;
+            margin-right: 8px;
+            position: relative;
+            top: 1px;
+        }
+    
+        @media screen and (max-width: 500px) {
+            #mobileshow { 
+                margin-top:50px; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader">
+        <div style="background-color: #46c4ed;"></div>
+        <div style="background-color: #46c4ed;"></div>
+        <div style="background-color: #46c4ed;"></div>
+    </div>
+    <!-- preloader end -->
+    <header>
+        <!-- header content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-container" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <!-- logo begin -->
+                            <a class="uk-logo" href="{% url 'home:home_view' %}">
+                                <img src="{% static 'img/godpips_logo.png' %}" data-src="{% static 'img/godpips_logo.png' %}" alt="logo" width="110" height="50" data-uk-img>
+                            </a>
+                            <!-- logo end -->
+                            <!-- navigation begin -->
+                            <ul class="uk-navbar-nav uk-visible@m">
+                                <li><a href="{% url 'home:home_view' %}">Home</a></li>
+                                <li><a href="{% url 'home:about_view' %}">About</a></li>
+                                <li><a href="{% url 'home:contact_view' %}">Contact Us</a></li>
+                                <li><a href="{% url 'accounts:dashboard_view' %}">Member Dashboard</a></li>
+                            </ul>
+                            <!-- navigation end -->
+                        </div>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav">
+                            {% if user.is_authenticated %}
+                                <a href="{% url 'accounts:logout_view' %}" class="uk-button uk-button-primary uk-border-rounded" style="background-color: red; color: white;">Logout<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                            {% else %}
+                                <a href="{% url 'accounts:signin_view' %}" class="uk-button uk-button-text">Log in<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                                <a href="{% url 'accounts:register_view' %}" class="uk-button uk-button-primary uk-border-rounded custom-button">Sign up<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- header content end -->
+    </header>
+    <!-- breadcrumb content begin -->
+    <div class="uk-section uk-padding-remove-vertical in-equity-breadcrumb custom-button">
+        <div class="uk-container">
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <div style="padding-top: 13px; padding-bottom: 16px;">
+                        <span style="margin-right: 3px;">Home</span> / <span style="color: white;">Legal Documentations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb content end -->
+    <main>
+        <!-- section content begin -->
+        <div class="uk-section">
+            <div class="uk-container">
+                <div class="uk-grid">
+                    <div class="uk-width-1-1 uk-text-center uk-margin-medium-bottom">
+                        <h1>pipsgod <span style="border-bottom: 3px solid #46c4ed;">legal docs</span></h1>
+                    </div>
+                    <div class="uk-grid-divider uk-child-width-1-3@m uk-child-width-1-2@s" data-uk-grid>
+                        <div>
+                            <i class="fas fa-file fa-lg in-icon-wrap custom-button"></i>
+                            <h3 class="uk-margin-top">Terms of Service</h3>
+                            <p>Read the Terms of Service and License Agreement for Equity as well as our EquityApp &amp; Developer Agreements.</p>
+                            <ul class="uk-list uk-margin-top">
+                                <li><a class="uk-button uk-button-text" href="#"><i class="fas fa-file-pdf fa-sm uk-margin-small-right"></i>License Agreement</a></li>
+                                <li><a class="uk-button uk-button-text" href="#"><i class="fas fa-file-pdf fa-sm uk-margin-small-right"></i>Term of Services for Equity Trade</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <i class="fas fa-globe fa-lg in-icon-wrap custom-button"></i>
+                            <h3 class="uk-margin-top">Policies</h3>
+                            <p>Find out more about what information we collect at Equity, how we use it, and what control you have over your data.</p>
+                            <ul class="uk-list uk-margin-top">
+                                <li><a class="uk-button uk-button-text" href="#"><i class="fas fa-file-pdf fa-sm uk-margin-small-right"></i>Privacy Statement</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-visible@m">
+                            <i class="fas fa-shield-alt fa-lg in-icon-wrap custom-button"></i>
+                            <h3 class="uk-margin-top">Security</h3>
+                            <p>Learn more about how we keep your work and personal data safe when you’re using our services.</p>
+                            <ul class="uk-list uk-margin-top">
+                                <li><a class="uk-button uk-button-text" href="#"><i class="fas fa-file-pdf fa-sm uk-margin-small-right"></i>Equity Trade Security</a></li>
+                                <li><a class="uk-button uk-button-text" href="#"><i class="fas fa-file-pdf fa-sm uk-margin-small-right"></i>Responsible Disclosure Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+    <footer>
+        <!-- footer content begin -->
+        <div class="uk-section">
+            <div class="uk-container">
+                <div class="uk-grid uk-flex uk-flex-middle">
+
+                    <div class="uk-width-2-3@m uk-text-small">
+                        <ul class="uk-subnav uk-subnav-divider" data-uk-margin>
+                            <li><a href="{% url 'home:legal_view' %}">Legal Documentations</a></li>
+                            <li><a href="{% url 'home:faqs_view' %}">FAQs</a></li>
+                            <li><a href="{% url 'home:about_view' %}">About</a></li>
+                            <li><a href="{% url 'home:contact_view' %}">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="mobileshow">
+                        <a target="_blank" href="https://youtu.be/FkFWGOlV6jY" class="social-link" style="background-color: #d64742; margin: 5px;"><i class="fab fa-youtube fab-icon"></i>Youtube</a>
+                        <a target="_blank" href="https://wa.link/bi1bq8" class="social-link" style="background-color: #075e54; margin: 5px;"><i class="fab fa-whatsapp fab-icon"></i>WhatsApp</a>
+                        <a target="_blank" href="https://www.instagram.com/pips.god/" class="social-link" style="background-color: #DD2A7B; margin: 5px;"><i class="fab fa-instagram fab-icon"></i>Instagram</a>
+                    </div>
+                </div>
+
+                <p class="copyright-text" style="text-align: center; margin-top: 50px;">©2021 pipsgod Markets Incorporated. All Rights Reserved.</p>
+
+            </div>
+        </div>
+        <!-- footer content end -->
+        <!-- totop begin -->
+        <div class="uk-visible@m">
+            <a href="#" class="in-totop fas fa-chevron-up custom-button" data-uk-scroll></a>
+        </div>
+        <!-- totop end -->
+    </footer>
+    <!-- javascript -->
+    <script src="{% static 'js/vendors/uikit.min.js' %}"></script>
+    <script src="{% static 'js/vendors/utilities.min.js' %}"></script>
+    <!-- <script src="{% static 'js/config-theme.js' %}"></script> -->
+
+    <script>
+        'use strict';
+
+        const HomepageApp = {
+            //----------- 1. Slideshow -----------
+            theme_slideshow: function() {
+                UIkit.slideshow('.in-slideshow', {
+                    autoplay: true,
+                    autoplayInterval: 8000,
+                    pauseOnHover: false,
+                    animation: 'slide',
+                    minHeight: 440,
+                    maxHeight: 580
+                });
+            },
+            //---------- 2. Counter -----------
+            theme_counter: function() {
+                const counter = new counterUp({
+                    selector: '.count',
+                    start: 0,
+                    duration: 3200,
+                    intvalues: true,
+                    interval: 50
+                });
+                counter.start();
+            },
+            //---------- 3. Mobile nav button -----------
+            theme_mobilenav: function() {
+                mobileNav({
+                    addonButtons: true,
+                    buttons: [{
+                        {% if user.is_authenticated %}
+                            name: 'Log out', // button name
+                            url: "{% url 'accounts:logout_view' %}", // button url
+                            type: 'secondary', // button type (default, primary, secondary, danger, text)
+                            icon: 'sign-out-alt' // button icon, you can use all icons from here : https://fontawesome.com/icons?d=gallery&s=solid&m=free
+                        {% else %}
+                            name: 'Log in', // button name
+                            url: "{% url 'accounts:signin_view' %}", // button url
+                            type: 'secondary', // button type (default, primary, secondary, danger, text)
+                            icon: 'sign-in-alt' // button icon, you can use all icons from here : https://fontawesome.com/icons?d=gallery&s=solid&m=free
+                        {% endif %}
+                    }]
+                });
+            },
+            //---------- 4. Modal iframe -----------
+            theme_video: function() {
+                modalIframe({
+                    videos: [{
+                        id: 'video-1', // video id (should not be the same as the next video)
+                        url: 'https://www.youtube.com/embed/F3QpgXBtDeo' // video embed url
+                    }]
+                });
+            },
+            //---------- 5. Tradingview widget -----------
+            theme_tradingview: function() {
+                if (window.tradingWidget)
+                    tradingWidget({
+                        widget: [{
+                                type: "market-overview",
+                                theme: "light",
+                                symbol: [ // array of instruments symbol based on Tradingview
+                                    {
+                                        s: "FX:EURUSD"
+                                    },
+                                    {
+                                        s: "FX:GBPUSD"
+                                    },
+                                    {
+                                        s: "FX:USDJPY"
+                                    },
+                                    {
+                                        s: "FX:USDCHF"
+                                    },
+                                    {
+                                        s: "FX:AUDUSD"
+                                    },
+                                    {
+                                        s: "FX:USDCAD"
+                                    }
+                                ]
+                            },
+                            {
+                                type: "symbol-overview",
+                                theme: "dark",
+                                symbol: "GOOGL" // symbol based on Tradingview
+                            }
+                        ]
+                    });
+            },
+            theme_init: function() {
+                HomepageApp.theme_slideshow();
+                HomepageApp.theme_counter();
+                HomepageApp.theme_mobilenav();
+                HomepageApp.theme_video();
+                HomepageApp.theme_tradingview();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            HomepageApp.theme_init();
+        });
+    </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

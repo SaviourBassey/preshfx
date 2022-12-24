@@ -1,0 +1,1097 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Presh Forex Academy">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, javascript">
+    <meta name="author" content="Aiby Ibans">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FCB42D" />
+
+     <!-- SEO -->
+   <meta
+   name="”keywords”"
+   content="PreshForex Academy,"
+   Forex,
+   forex academy,
+   best forex academy in Nigera,
+   best female trader in Nigeria,
+   forex trading,
+   synthetic indices,
+   vix75,
+   boom and crash,
+   synthetic indices trading,
+   synthetic indices trading academy,
+   forex queen,
+   habby forex academy,
+   kojo forex academy,
+   preshbae forex,
+   female forex traders, 
+   best female forex trader,
+   female trader in nigeria,
+   bukhari forex academy,
+   nasdaq forex academy,
+   benjamin forex academy,
+   uche paragon forex academy in lagos,
+   forex academy abuja,
+   persian forex academy,
+   forex factory,
+   my forex funds,
+   alpari forex”
+/>
+    <!-- Site Properties -->
+    <title>PreshForex Academy - Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- critical preload -->
+    <link rel="preload" href="{% static 'js/vendors/uikit.min.js' %}" as="script">
+    <link rel="preload" href="{% static 'css/vendors/uikit.min.css' %}" as="style">
+    <link rel="preload" href="{% static 'css/style.css" as="style' %}">
+    <!-- icon preload -->
+    <link rel="preload" href="{% static 'fonts/fa-brands-400.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/fa-solid-900.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <!-- font preload -->
+    <link rel="preload" href="{% static 'fonts/archivo-v9-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/archivo-v9-latin-300.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/archivo-v9-latin-700.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <!-- Favicon and apple icon -->
+    <link rel="shortcut icon" href="{% static 'img/logo.jpeg' %}" type="img/logo">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'img/logo.jpeg' %}">
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/vendors/uikit.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        #review-mobile-view{
+            display: none;
+        }
+
+        @media screen and (max-width: 500px) {
+            #slider-img-mobileView { 
+                margin-top:50px; 
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            #desktop-view { 
+                display: none; 
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            #review-mobile-view { 
+                display: block;
+            }
+        }
+
+        .in-equity-14 .in-list-check>li::before {
+            font-size: 23px;
+            color: black;
+            z-index: 1;
+            position: relative;
+            top: -6px;
+            left: -18px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- preloader end -->
+    <header>
+        <!-- header content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container uk-navbar-transparent" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-container" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <!-- logo begin -->
+                            <div class="logo-box-style2">
+                                <a href="{% url 'home:home_view' %}">
+                                    <img src="{% static 'img/logo-removebg-preview.png' %}" alt="Awesome Logo" title="" width="146" height="39">
+                                </a>
+                            </div>
+                            <!-- logo end -->
+                            <!-- navigation begin -->
+                            <ul class="uk-navbar-nav uk-visible@m">
+                                <li><a href="{% url 'home:home_view' %}">Home</a></li>
+                                <li><a href="{% url 'home:about_view' %}">About</a></li>
+                                <li><a href="{% url 'home:contact_view' %}">Contact</a></li>
+                                <!-- <li><a href="customers.html">Reviews</a></li> -->
+                            </ul>
+                            <!-- navigation end -->
+                        </div>
+                    </div>
+                    <!-- <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav">
+                            <a href="signin.html" class="uk-button uk-button-text">Log in<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                            <a href="#" class="uk-button uk-button-primary uk-border-rounded">Sign up<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+            </nav>
+        </div>
+        <!-- header content end -->
+    </header>
+    <main>
+        <!-- slideshow content begin -->
+        <div class="uk-section uk-padding-remove-vertical in-slideshow-gradient">
+            <div id="particles-js" class="uk-light in-slideshow uk-background-contain" data-src="" data-uk-img data-uk-slideshow>
+                <hr>
+                <ul class="uk-slideshow-items">
+                    <li class="uk-flex uk-flex-middle">
+                        <div class="uk-container">
+                            <div class="uk-grid-large uk-flex-middle" data-uk-grid>
+                                <div class="uk-width-1-2@s in-slide-text">
+                                    <p class=""></p>
+                                    <h1 class="uk-heading-small">Learn from Industry <span style="border-bottom: 3px solid #0a2cc4;">Expert.</span></h1>
+                                    <p class="uk-text-lead uk-visible@m">If a strategy is widely available for free or is offered on a small payment can never work. A secret is not a secret if a YouTube commercial offers it for a small payment of a hundred dollars.”
+                                        ― Naved Abdali</p>
+                                    <!-- <div>
+                                    <a href="" style="background-color: #fcb42d; border-radius: 10px; padding-left: 10px; padding-top: 15px; padding-bottom: 15px; padding-right: 10px; text-decoration: none; margin-right: 5px;">SIGN UP</a> 
+                                        <a href="" style="background-color: #fcb42d; border-radius: 10px; padding-left: 10px; padding-top: 15px; padding-bottom: 15px; padding-right: 10px; text-decoration: none;">FREE COMMUNITY</a>
+                                    </div> -->
+                                </div>
+                                <div class="in-slide-img" id="slider-img-mobileView">
+                                    <img src="{% static 'img/chart-removebg-preview.png' %}" data-src="{% static 'img/chart-removebg-preview.png' %}" alt="image-slide" width="652" height="746" data-uk-img>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li class="uk-flex uk-flex-middle">
+                        <div class="uk-container">
+                            <div class="uk-grid-large uk-flex-middle" data-uk-grid>
+                                <div class="uk-width-1-2@s in-slide-text">
+                                    <p></p>
+                                    <h1 class="uk-heading-small">Reach out to new trading <span style="border-bottom: 3px solid #46c4ed;">experience</span>.</h1>
+                                    <p class="uk-text-lead uk-visible@m">Bring your trading ventures go around the world, way beyond the space of your trading account.</p>
+                                </div>
+                                <div class="in-slide-img">
+                                    <img src="{% static 'img/cover33.png' %}" data-src="{% static 'img/cover33.png' %}" alt="image-slide" width="652" height="746" data-uk-img>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="uk-container">
+                    <div class="uk-position-relative" data-uk-grid>
+                        <ul class="uk-slideshow-nav uk-dotnav uk-position-bottom-right uk-flex uk-flex-middle"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slideshow content end -->
+
+         <!-- section content begin -->
+         <div class="uk-section in-equity-7 uk-background-contain uk-background-top-left" data-src="{% static 'img/in-equity-7-bg.jpg' %}" data-uk-img>
+            <div class="uk-container uk-margin-medium-top uk-margin-bottom">
+                <div class="uk-grid">
+                    <div class="uk-width-1-2@m in-symbol-wrap">
+                        <div class="uk-inline uk-dark uk-width-1-1 uk-height-1-1">
+                            <span class="uk-position-absolute uk-transform-center in-symbol-1" style="left: 12%; top: 42%">
+                                <img src="{% static 'img/logo-removebg-preview.png' %}" alt="symbol-logo">
+                            </span>
+                            <span class="uk-position-absolute uk-transform-center in-symbol-2" style="left: 58%; top: 18%">
+                                <img src="{% static 'img/logo-removebg-preview.png' %}" alt="symbol-logo">
+                            </span>
+                            <span class="uk-position-absolute uk-transform-center in-symbol-3" style="left: 22%; top: 13%">
+                                <img src="{% static 'img/logo-removebg-preview.png' %}" alt="symbol-logo">
+                            </span>
+                            <span class="uk-position-absolute uk-transform-center in-symbol-4" style="left: 70%; top: 60%">
+                                <img src="{% static 'img/logo-removebg-preview.png' %}" alt="symbol-logo">
+                            </span>
+                            <span class="uk-position-absolute uk-transform-center in-symbol-5" style="left: 10%; top: 38%"></span>
+                            <span class="uk-position-absolute uk-transform-center in-symbol-6" style="left: 52%; top: 6%"></span>
+                            <span class="uk-position-absolute uk-transform-center in-symbol-7" style="left: 70%; top: 89%"></span>
+                            <span class="uk-position-absolute uk-transform-center in-symbol-8" style="left: 32%; top: 97%"></span>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@m uk-margin-bottom">
+                        <span class="uk-label">Explore all services<i class="fas fa-arrow-right fa-xs uk-margin-small-left"></i></span>
+                        <h1 class="uk-margin-top">Our <span style="color: crimson; border-bottom: 3px solid #0a2cc4;">Services</span></h1>
+                        <!-- <p class="uk-text-lead uk-margin-top">Managed portfolios are built by experts to target sustainable, long-term results and the highest returns for your risk level.</p> -->
+                        <div class="uk-grid-medium uk-child-width-1-2@m uk-child-width-1-2@s uk-margin-medium-top" data-uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium uk-text-center">
+                                    <img class="uk-align-center" src="{% static 'img/in-lazy.gif' %}" data-src="{% static 'img/in-equity-7-icon-1.svg' %}" alt="icon-1" data-width data-height data-uk-img>
+                                    <h4 style="color:green;" class="uk-margin-remove">MENTORSHIP</h4>
+                                    <p class="uk-margin-small-top uk-margin-small-bottom">We offer a complete beginner to advanced Forex Trading Live class with Lifetime Mentorship.</p>
+                                    <a href="#" class="uk-button uk-button-text uk-margin-top uk-margin-small-bottom">Sign up<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium uk-text-center">
+                                    <img class="uk-align-center" src="{% static 'img/in-lazy.gif' %}" data-src="{% static 'img/in-equity-7-icon-2.svg' %}" alt="icon-2" data-width data-height data-uk-img>
+                                    <h4 style="color: green;" class="uk-margin-remove">COPY TRADING</h4>
+                                    <p class="uk-margin-small-top uk-margin-small-bottom">We have a paid signals group where you get to copy all the trades taken by our pro trader.</p>
+                                    <a href="#" class="uk-button uk-button-text uk-margin-top uk-margin-small-bottom">Sign up<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium uk-text-center">
+                                    <img class="uk-align-center" src="{% static 'img/in-lazy.gif' %}" data-src="{% static 'img/in-equity-7-icon-2.svg' %}" alt="icon-2" data-width data-height data-uk-img>
+                                    <h4 style="color: green;" class="uk-margin-remove">FREE COMMUNITY</h4>
+                                    <p class="uk-margin-small-top uk-margin-small-bottom">We have a Free community of 1,000+ Members where Forex Chart is being shared.</p>
+                                    <a href="https://t.me/PreshbaeForex" class="uk-button uk-button-text uk-margin-top uk-margin-small-bottom">Join now<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                                </div>
+                            </div>
+                            <!-- <div>
+                                <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium uk-text-center">
+                                    <img class="uk-align-center" src="img/in-lazy.gif" data-src="img/in-equity-7-icon-2.svg" alt="icon-2" data-width data-height data-uk-img>
+                                    <h4 class="uk-margin-remove">SOMETHING</h4>
+                                    <p class="uk-margin-small-top uk-margin-small-bottom">We have a Free community of 1,000+ Members where Forex Chart is being shared.</p>
+                                    <a href="#" class="uk-button uk-button-text uk-margin-top uk-margin-small-bottom">Learn more<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+        <!-- section content begin -->
+        <!-- <div class="uk-section uk-section-primary uk-preserve-color in-equity-1">
+            <div class="uk-container">
+                <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                        <h4>Our Services</h4>
+                    </div>
+                </div>
+                <div class="uk-grid-match uk-grid-medium uk-child-width-1-4@m uk-child-width-1-2@s uk-margin-bottom" data-uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-body uk-card-default uk-border-rounded">
+                            <div class="uk-flex uk-flex-middle">
+                                <span class="in-product-name red">MT</span>
+                                <h5 class="uk-margin-remove">MENTHORSHIP</h5>
+                            </div>
+                            <p>We offer a complete beginner to advanced Forex Trading Live class with Lifetime Mentorship.</p>
+                            <a href="#" class="uk-button uk-button-text uk-float-right uk-position-bottom-right">Explore<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-card-default uk-border-rounded">
+                            <div class="uk-flex uk-flex-middle">
+                                <span class="in-product-name green">CT</span>
+                                <h5 class="uk-margin-remove">COPY TRADING</h5>
+                            </div>
+                            <p>We have a paid signals group where you get to copy all the trades taken by our pro trader.</p>
+                            <a href="#" class="uk-button uk-button-text uk-float-right uk-position-bottom-right">Explore<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-card-default uk-border-rounded">
+                            <div class="uk-flex uk-flex-middle">
+                                <span class="in-product-name blue">FC</span>
+                                <h5 class="uk-margin-remove">FREE COMMUNITY</h5>
+                            </div>
+                            <p>We have a Free community of 1,000+ Members where Forex Chart is being shared.</p>
+                            <a href="#" class="uk-button uk-button-text uk-float-right uk-position-bottom-right">Explore<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-card-default uk-border-rounded">
+                            <div class="uk-flex uk-flex-middle">
+                                <span class="in-product-name"><i class="fas fa-ellipsis-h fa-xs"></i></span>
+                                <h5 class="uk-margin-remove">More products</h5>
+                            </div>
+                            <p>Explore the full range of cash and leveraged products</p>
+                            <a href="#" class="uk-button uk-button-text uk-float-right uk-position-bottom-right">Explore<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- section content end -->
+        <!-- section content begin -->
+        <div class="uk-section in-equity-16">
+            <div class="uk-container uk-margin-top uk-margin-large-bottom">
+                <div class="uk-grid uk-flex uk-flex-center in-offset-bottom-20">
+                    <div class="uk-width-5-6@m uk-text-center">
+                        <h1 class="uk-margin-remove"><span style="border-bottom: 3px solid #0a2cc4;">Learn,</span> then remove the "L" and <span style="color: blue;"> Earn.</span></h1>
+                        <p class="uk-text-lead uk-text-muted uk-margin-small-top">Learn how the markets work with our beginner to advanced mentorship Program.</p>
+                        <div class="uk-grid-medium uk-child-width-1-4@m uk-child-width-1-2@s uk-margin-large-top uk-margin-medium-bottom" data-uk-grid>
+                            <div>
+                                <a href="#" class="uk-card uk-card-default uk-card-body">
+                                    <i style="color: crimson;" class="fas fa-clipboard-list uk-margin-small-right"></i>
+                                    <h5>Trader's glossary</h5>
+                                    <p class="uk-text-small uk-text-muted">A-Z trading terms</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card uk-card-default uk-card-body">
+                                    <i style="color: crimson;" class="fas fa-video uk-margin-small-right"></i>
+                                    <h5>Tutorial videos</h5>
+                                    <p class="uk-text-small uk-text-muted">Free learning courses</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card uk-card-default uk-card-body">
+                                    <i style="color: crimson;"  class="fas fa-file-pdf uk-margin-small-right"></i>
+                                    <h5>Trade Signals</h5>
+                                    <p class="uk-text-small uk-text-muted">Earn while learning</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card uk-card-default uk-card-body">
+                                    <i style="color: crimson;"  class="fas fa-microphone-alt uk-margin-small-right"></i>
+                                    <h5>Live session</h5>
+                                    <p class="uk-text-small uk-text-muted">Zoom live training</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid uk-grid-large uk-flex uk-flex-middle" data-uk-grid>
+                    <div class="uk-width-3-5@m">
+                        <div class="in-equity-video">
+                            <img class="uk-border-rounded uk-width-1-1" src="{% static 'img/in-lazy.gif' %}" data-src="{% static 'img/in-equity-16-image.jpg' %}" alt="sample-images" width="533" height="355" data-uk-img>
+                            <div class="uk-position-center">
+                                <a href="https://youtu.be/EX8lU92LLdU" data-uk-toggle>
+                                    <div class="in-play-button"></div>
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="uk-flex-top" data-uk-modal>
+                                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical in-iframe">
+                                    <button class="uk-modal-close-outside" type="button" data-uk-close></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+                        <h3> What you will learn</h3>
+                        <ul class="uk-list uk-list-bullet in-list-check">
+                            <li>Introduction to Synthetic & Forex Trading</li>
+                            <li>Technical Analysis</li>
+                            <li>Fundamental Analysis</li>
+                            <li>When to Enter & Exit Trades</li>
+                            <li>How to Manage Risk</li>
+                            <li>Trading Psychology</li>
+                            <li>etc.</li>
+                        </ul>
+                        <a style="background-color: #0a2cc4;" class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-top" href="#">SIGN UP<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+        <!-- section content begin -->
+        <div class="uk-section in-equity-17">
+            <div class="uk-container uk-margin-top uk-margin-medium-bottom">
+                <div class="uk-grid uk-flex uk-flex-center">
+                    <div class="uk-width-3-5@m uk-text-center">
+                        <h1 class="uk-margin-remove">Our <span style="border-bottom: 3px solid #0a2cc4;">paid</span> services</h1>
+                        <!-- <p class="uk-text-lead uk-text-muted uk-margin-small-top">Simply select your preferred account type in our application form.</p> -->
+                    </div>
+                    <div class="uk-width-3-4@m uk-margin-medium-top">
+                        <div class="uk-grid-collapse uk-child-width-1-2@m in-equity-pricing" data-uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium">
+                                    <p class="uk-text-small uk-text-muted uk-text-uppercase">FEE<span class="uk-label uk-margin-small-left in-label-small">$100/mo</span></p>
+                                    <h2 class="uk-margin-top uk-margin-remove-bottom">Trade Signals</h2>
+                                    <!-- <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from industry-leading entry prices</p> -->
+                                    <hr>
+                                    <ul class="uk-list uk-list-bullet in-list-check">
+                                        <li>Premium Monthly Signals</li>
+                                        <li>Sniper Entries</li>
+                                        <li>0 - 3 trades Weekly</li>
+                                        <li>Risk & Money Management</li>
+                                        <li>80 - 90% Accuracy</li>
+                                    </ul>
+                                    <a href="#" class="uk-button uk-button-default uk-border-rounded uk-align-center">SIGN UP<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body uk-box-shadow-large">
+                                    <p class="uk-text-small uk-text-muted uk-text-uppercase">FEE<span class="uk-label uk-margin-small-left in-label-small">$400</span></p>
+                                    <h2 class="uk-margin-top uk-margin-remove-bottom">Lifetime Mentorship</h2>
+                                    <!-- <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Receive even tighter spreads and commissions</p> -->
+                                    <hr>
+                                    <ul class="uk-list uk-list-bullet in-list-check">
+                                        <li>Beginner To Masterclass Course</li>
+                                        <li>Live Zoom Sessions</li>
+                                        <li>Free Signals</li>
+                                        <li>Access To Members Private Group</li>
+                                        <li>Access To Previous Recorded Sessions</li>
+                                        <li>Intensive One Month Training</li>
+                                    </ul>
+                                    <a href="#" style="background-color: #0a2cc4; color: aliceblue;" class="uk-button uk-button-primary uk-border-rounded uk-align-center">SIGN UP<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+        <!-- section content begin -->
+        <!-- <div class="uk-section in-equity-17">
+            <div class="uk-container uk-margin-top uk-margin-medium-bottom">
+                <div class="uk-grid uk-flex uk-flex-center">
+                    <div class="uk-width-3-5@m uk-text-center">
+                        <h1 class="uk-margin-remove">All <span class="in-highlight">Reviews</span></h1>
+                        <p class="uk-text-lead uk-text-muted uk-margin-small-top">.</p>
+                    </div>
+                            <div class="uk-grid-collapse uk-child-width-1-6@m uk-child-width-1-2@s uk-text-center in-client-logo-6" data-uk-grid>
+                                <div class="uk-tile uk-tile-default">
+                                    <img class="uk-margin-remove" src="img/student review.jpg" alt="Student-review" width="167" height="55">
+                                </div>
+                                <div class="uk-tile uk-tile-default">
+                                    <img class="uk-margin-remove" src="img/sudent review1.jpg" alt="Student-review" width="167" height="55">
+                                </div>
+                                <div class="uk-tile uk-tile-default">
+                                    <img class="uk-margin-remove" src="img/sudent review2.jpg" alt="Student-review" width="167" height="55">
+                                </div>
+                                <div class="uk-tile uk-tile-default">
+                                    <img class="uk-margin-remove" src="img/sudent review3.jpg" alt="Student-review" width="167" height="55">
+                                </div>
+                                <div class="uk-tile uk-tile-default">
+                                    <img class="uk-margin-remove" src="img/sudent review4.jpg" alt="Student-review" width="167" height="55">
+                                </div>
+                                <div class="uk-tile uk-tile-default">
+                                    <img class="uk-margin-remove" src="img/sudent review5.jpg" alt="Student-review" width="167" height="55">
+                                </div>
+                                <div class="uk-tile uk-tile-default">
+                                    <img class="uk-margin-remove" src="img/sudent review6.jpg" alt="Student-review" width="167" height="55">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- section content end -->
+
+
+        <!-- Review Desktop content begin -->
+        <div class="container mb-5" id="desktop-view">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h1 class="uk-margin-remove">All <span style="border-bottom: 3px solid #0a2cc4;">Reviews</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter1">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/student review.jpg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 1</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Review 1</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="mx-auto d-block" src="{% static 'img/student review.jpg' %}" alt="">
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter2">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/sudent review1.jpg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 2</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Review 2</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="mx-auto d-block" src="{% static 'img/sudent review1.jpg' %}" alt="">
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter3">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/sudent review2.jpg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 3</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Review 3</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls style="height: 100%; width:100%;">
+                                                        <source src="{% static 'vid/sudent review27.mp4' %}" type="video/mp4">
+                                                        <!-- <source src="movie.ogg" type="video/ogg">
+                                                        Your browser does not support the video tag. -->
+                                                    </video>
+                                                    <!-- <video src="video/testvideo.mp4"></video> -->
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter4">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/sudent review3.jpg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 4</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Review 4</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls style="height: 100%; width:100%;">
+                                                        <source src="{% static 'vid/sudent review26.mp4' %}" type="video/mp4">
+                                                        <!-- <source src="movie.ogg" type="video/ogg">
+                                                        Your browser does not support the video tag. -->
+                                                    </video>
+                                                    <!-- <video src="video/testvideo.mp4"></video> -->
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter5">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/sudent review4.jpg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 5</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Review 5</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="mx-auto d-block" src="{% static 'img/sudent review4.jpg' %}" alt="">
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter6">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/sudent review5.jpg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 6</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalCenterTitle">Review 6</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <video controls style="height: 100%; width:100%;">
+                                                            <source src="{% static 'vid/sudent review24.mp4' %}" type="video/mp4">
+                                                            <!-- <source src="movie.ogg" type="video/ogg">
+                                                            Your browser does not support the video tag. -->
+                                                        </video>
+                                                        <!-- <video src="video/testvideo.mp4"></video> -->
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter7">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/sudent review6.jpg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 7</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Review 7</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls style="height: 100%; width:100%;">
+                                                        <source src="{% static 'vid/sudent review23.mp4' %}" type="video/mp4">
+                                                        <!-- <source src="movie.ogg" type="video/ogg">
+                                                        Your browser does not support the video tag. -->
+                                                    </video>
+                                                    <!-- <video src="video/testvideo.mp4"></video> -->
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter8">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/sudent review7.jpeg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 8</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Review 8</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls style="height: 100%; width:100%;">
+                                                        <source src="{% static 'vid/sudent review22.mp4' %}" type="video/mp4">
+                                                        <!-- <source src="movie.ogg" type="video/ogg">
+                                                        Your browser does not support the video tag. -->
+                                                    </video>
+                                                    <!-- <video src="video/testvideo.mp4"></video> -->
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter9">
+                                        <div class="single-box">
+                                            <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/sudent review16.jpeg' %}" alt="" style="height: 95%;"></div>
+                                            <div class="img-text" style="text-align: center;">
+                                                <h5>Review 9</h5>
+                                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Review 9</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <video controls style="height: 100%; width:100%;">
+                                                        <source src="{% static 'vid/sudent review21.mp4' %}" type="video/mp4">
+                                                        <!-- <source src="movie.ogg" type="video/ogg">
+                                                        Your browser does not support the video tag. -->
+                                                    </video>
+                                                    <!-- <video src="video/testvideo.mp4"></video> -->
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
+                        
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #fcb42d;"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #fcb42d;"></span>
+                            <span class="sr-only">Next</span>
+                        </a>     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review Desktop section content end -->
+
+
+        <!-- Review Mobile content begin -->
+        <div class="container mb-5" id="review-mobile-view">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h1 class="uk-margin-remove">All <span class="in-highlight">Reviews</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleCaptionsMobile" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptionsMobile" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptionsMobile" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptionsMobile" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="single-box" data-toggle="modal" data-target="#exampleModalCenterMobile1">
+                                    <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/student review.jpg' %}" alt="" style="height: 95%;"></div>
+                                    <div class="img-text" style="text-align: center;">
+                                        <h5>Review 1</h5>
+                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenterMobile1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="mx-auto d-block" src="{% static 'img/student review.jpg' %}" alt="">
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item"  data-toggle="modal" data-target="#exampleModalCenterMobile2">
+                                <div class="single-box">
+                                    <div class="img-area" style="height: 500px;"><img class="mx-auto d-block" src="{% static 'img/student review.jpg' %}" alt="" style="height: 95%;"></div>
+                                    <div class="img-text" style="text-align: center;">
+                                        <h5>Review 2</h5>
+                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenterMobile2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="mx-auto d-block" src="{% static 'img/student review.jpg' %}" alt="">
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+                        </div> 
+                        <a class="carousel-control-prev" href="#carouselExampleCaptionsMobile" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #fcb42d;"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptionsMobile" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #fcb42d;"></span>
+                            <span class="sr-only">Next</span>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review Mobile section content end -->
+
+
+         <!-- section content begin -->
+         <div style="background-color: green;" class="uk-section uk-section-primary uk-preserve-color in-equity-14 uk-background-contain uk-background-top-center" data-src="{% static 'img/in-equity-14-bg.svg' %}" data-uk-img>
+            <div class="uk-container uk-margin-small-bottom">
+                <div class="uk-child-width-1-2@m uk-flex uk-flex-middle" data-uk-grid>
+                    <div>
+                        <div class="uk-flex uk-flex-left uk-flex-middle">
+                            <div class="uk-margin-right in-award-logo">
+                                <img src="{% static 'img/in-lazy.gif' %}" data-src="{% static 'img/in-equity-5-award-3.svg' %}" alt="award" width="128" data-height data-uk-img>
+                            </div>
+                            <div class="in-award-badge" style="color: white;">
+                                <h3 class="uk-margin-remove" style="color: white;">Traders Final Stop</h3>
+                                <h4 class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase in-heading-thin" style="color: white;">Trading Success awaits you.</h4>
+                                <!-- <p class="uk-text-small uk-margin-remove uk-visible@m">Voted by industry professionals</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-right uk-flex-middle right-content">
+                        <ul class="uk-list in-list-check uk-margin-remove-bottom uk-margin-right" style="color: white;">
+                            <li style="color: white;">Live Zoom Class with Preshbae</li>
+                            <li style="color: white;">Earn while learning with our signals</li>
+                        </ul>
+                        <span class="uk-margin-large-left">
+                            <a href="#" style="background-color: black" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">Register<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+    <footer>
+        <!-- footer content begin -->
+        <!-- <div class="uk-section">
+            <div class="uk-container uk-margin-top">
+                <div class="uk-grid">
+                    <div class="uk-width-2-3@m">
+                        <div class="uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid> -->
+                            <!-- <div>
+                                <h5>Useful Links</h5>
+                                <ul class="uk-list uk-link-text">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                </ul>
+                            </div> -->
+                            <!-- <div>
+                                <h5>Analytics</h5>
+                                <ul class="uk-list uk-link-text">
+                                    <li><a href="#">World Markets</a></li>
+                                    <li><a href="#">Trading Central<span class="uk-label uk-margin-small-left in-label-small">New</span></a></li>
+                                    <li><a href="#">Forex charts online</a></li>
+                                    <li><a href="#">Market calendar</a></li>
+                                    <li><a href="#">Central banks<span class="uk-label uk-margin-small-left in-label-small">New</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="in-margin-top-60@s">
+                                <h5>Education</h5>
+                                <ul class="uk-list uk-link-text">
+                                    <li><a href="#">Basic course</a></li>
+                                    <li><a href="#">Introductory webinar</a></li>
+                                    <li><a href="#">About academy</a></li>
+                                </ul>
+                            </div> -->
+                        <!-- </div>
+                    </div> -->
+              
+                    <!-- <div class="uk-width-1-3@m uk-flex uk-flex-right@m">
+                        <ul class="uk-list uk-link-text in-footer-socials"> -->
+                            <!-- <li><a href="#some-link" class="fb-bg"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                            <li><a href="#some-link" class="tw-bg"><i class="fab fa-twitter"></i>Twitter</a></li> -->
+                            <!-- <li><a href="#some-link" class="yt-bg"><i class="fab fa-youtube"></i>Youtube</a></li>
+                            <li><a href="#some-link" class="ig-bg"><i class="fab fa-instagram"></i>Instagram</a></li>
+                            <li><a href="#some-link" class="tl-bg"><i class="fab fa-telegram-plane"></i>Telegram</a></li>
+                        </ul> -->
+                    <!-- </div> -->
+                <!-- </div>
+            </div> -->
+            <hr class="uk-margin-large">
+            <div class="uk-container">
+                <div class="uk-grid uk-flex uk-flex-middle">
+                    <div class="uk-width-2-3@m uk-text-small">
+                        <ul class="uk-subnav uk-subnav-divider uk-visible@s" data-uk-margin>
+                            <li><a href="#">Disclaimer: Trading and/or investing in Leveraged Products comes with a substaintial amount of risk and you may loose part or all of your investments. Be Advised.</a></li>
+                        </ul>
+                        <p style="align-content: 50% ;" class="copyright-text">©2022 PreshForex Academy. All Rights Reserved. <a href="#">SiteCredit Aiby Technologies</a></p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex uk-flex-right uk-visible@m">
+                        <span class="uk-margin-right"><img src="{% static 'img/in-lazy.gif' %}" data-src="{% static 'img/in-footer-mastercard.svg' %}" alt="footer-payment" width="34" height="21" data-uk-img></span>
+                        <span><img src="{% static 'img/in-lazy.gif' %}" data-src="img/in-footer-visa.svg" alt="footer-payment" width="50" height="16" data-uk-img></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer content end -->
+        <!-- totop begin -->
+        <div class="uk-visible@m">
+            <a style="background-color: #0a2cc4;" href="#" class="in-totop fas fa-chevron-up" data-uk-scroll></a>
+        </div>
+        <!-- totop end -->
+    </footer>
+    <!-- javascript -->
+    <script src="{% static 'js/vendors/uikit.min.js' %}"></script>
+    <script src="{% static 'js/vendors/utilities.min.js' %}"></script>
+    <script src="{% static 'js/vendors/market-plugin.min.js' %}"></script>
+    <script src="{% static 'js/vendors/particles.min.js' %}"></script>
+    <script src="{% static 'js/config-particles.js' %}"></script>
+    <!-- <script src="js/config-theme.js"></script> -->
+    <script>
+        /* --------------------------------------------------------------------------
+ * File        : config-theme.js
+ * Author      : indonez
+ * Author URI  : http://www.indonez.com
+ *
+ * Indonez Copyright 2020 All Rights Reserved.
+ * -------------------------------------------------------------------------- 
+ * javascript handle initialization
+    1. Slideshow
+    2. Counter
+    3. Mobile nav button
+    4. Modal iframe
+    5. Tradingview widget
+ * -------------------------------------------------------------------------- */
+
+'use strict';
+
+const HomepageApp = {
+    //----------- 1. Slideshow -----------
+    theme_slideshow: function() {
+        UIkit.slideshow('.in-slideshow', {
+            autoplay: true,
+            autoplayInterval: 8000,
+            pauseOnHover: false,
+            animation: 'slide',
+            minHeight: 440,
+            maxHeight: 580
+        });
+    },
+    //---------- 2. Counter -----------
+    theme_counter: function() {
+        const counter = new counterUp({
+            selector: '.count',
+            start: 0,
+            duration: 3200,
+            intvalues: true,
+            interval: 50
+        });
+        counter.start();
+    },
+    //---------- 3. Mobile nav button -----------
+    theme_mobilenav: function() {
+        mobileNav({
+            addonButtons: true,
+            buttons: [{
+                name: 'Log in', // button name
+                url: '#', // button url
+                type: 'primary', // button type (default, primary, secondary, danger, text)
+                icon: 'sign-in-alt' // button icon, you can use all icons from here : https://fontawesome.com/icons?d=gallery&s=solid&m=free
+            }]
+        });
+    },
+    //---------- 4. Modal iframe -----------
+    theme_video: function() {
+        modalIframe({
+            videos: [{
+                id: 'video-1', // video id (should not be the same as the next video)
+                url: 'https://www.youtube.com/embed/EX8lU92LLdU' // video embed url
+            }]
+        });
+    },
+    //---------- 5. Tradingview widget -----------
+    theme_tradingview: function() {
+        if (window.tradingWidget)
+            tradingWidget({
+                widget: [{
+                        type: "market-overview",
+                        theme: "light",
+                        symbol: [ // array of instruments symbol based on Tradingview
+                            {
+                                s: "FX:EURUSD"
+                            },
+                            {
+                                s: "FX:GBPUSD"
+                            },
+                            {
+                                s: "FX:USDJPY"
+                            },
+                            {
+                                s: "FX:USDCHF"
+                            },
+                            {
+                                s: "FX:AUDUSD"
+                            },
+                            {
+                                s: "FX:USDCAD"
+                            }
+                        ]
+                    },
+                    {
+                        type: "symbol-overview",
+                        theme: "dark",
+                        symbol: "GOOGL" // symbol based on Tradingview
+                    }
+                ]
+            });
+    },
+    theme_init: function() {
+        HomepageApp.theme_slideshow();
+        HomepageApp.theme_counter();
+        HomepageApp.theme_mobilenav();
+        HomepageApp.theme_video();
+        HomepageApp.theme_tradingview();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    HomepageApp.theme_init();
+});
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

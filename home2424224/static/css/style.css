@@ -9470,7 +9470,7 @@ readers do not read off random characters that represent icons */
 
 .in-equity-14 .in-list-check>li::before {
     font-size: 23px;
-    color: #4886d9;
+    color: black;
     z-index: 1;
     position: relative;
     top: -6px;
