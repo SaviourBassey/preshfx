@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import Review
+# from .models import Review
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import logout
@@ -10,17 +10,17 @@ from django.contrib.auth import logout
 
 class HomeView(View):
     def get(self, request, *args, **kwargs):
-        logout(request)
-        all_review = Review.objects.all().exclude(review="").order_by("-updated")[:2]
-        user_no = User.objects.all().count()
-        if all_review.count() == 2:
-            context = {
-                "all_review":all_review,
-                "user_no":user_no
-            }
-            return render(request, "home/index.html", context)
-        else:
-            return render(request, "home/index.html")
+        # logout(request)
+        # all_review = Review.objects.all().exclude(review="").order_by("-updated")[:2]
+        # user_no = User.objects.all().count()
+        # if all_review.count() == 2:
+        #     context = {
+        #         "all_review":all_review,
+        #         "user_no":user_no
+        #     }
+        #     return render(request, "home/index.html", context)
+        # else:
+        return render(request, "home/index.html")
 
 
 class AboutView(View):
