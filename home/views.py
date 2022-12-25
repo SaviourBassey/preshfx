@@ -11,7 +11,7 @@ from django.contrib.auth import logout
 class HomeView(View):
     def get(self, request, *args, **kwargs):
         # logout(request)
-        # all_review = Review.objects.all().exclude(review="").order_by("-updated")[:2]
+        # all_review = ReviewMerry christmas/happy new year.objects.all().exclude(review="").order_by("-updated")[:2]
         # user_no = User.objects.all().count()
         # if all_review.count() == 2:
         #     context = {
@@ -52,28 +52,28 @@ class FaqsView(View):
         return render(request, "home/faqs.html")
 
 
-class ReviewView(LoginRequiredMixin, View):
-    def get(self, request, *args, **kwargs):
-        try:
-            user_review = Review.objects.get(user=request.user)
-        except:
-            user_review = ""
-        context = {
-            "user_review":user_review
-        }
-        return render(request, "home/review.html", context)
+# class ReviewView(LoginRequiredMixin, View):
+#     def get(self, request, *args, **kwargs):
+#         try:
+#             user_review = Review.objects.get(user=request.user)
+#         except:
+#             user_review = ""
+#         context = {
+#             "user_review":user_review
+#         }
+#         return render(request, "home/review.html", context)
 
-    def post(self, request, *args, **kwargs):
-        user_review = request.POST.get("user_review")
-        try:
-            review  = Review.objects.get(user=request.user)
-        except:
-            review  = None
+#     def post(self, request, *args, **kwargs):
+#         user_review = request.POST.get("user_review")
+#         try:
+#             review  = Review.objects.get(user=request.user)
+#         except:
+#             review  = None
 
-        if review != None:
-            review.review = user_review
-            review.save()
-        else:
-            messages.success(request, "Your review was updated successfully")
-            review  = Review.objects.create(user=request.user, review=user_review)
-        return redirect("home:review_view")
+#         if review != None:
+#             review.review = user_review
+#             review.save()
+#         else:
+#             messages.success(request, "Your review was updated successfully")
+#             review  = Review.objects.create(user=request.user, review=user_review)
+#         return redirect("home:review_view")
