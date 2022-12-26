@@ -268,6 +268,7 @@
         </div>
         <!-- section content end -->
     </main>
+    <hr>
     <footer>
         <!-- footer content begin -->
         <div class="uk-section">
@@ -276,17 +277,19 @@
 
                     <div class="uk-width-2-3@m uk-text-small">
                         <ul class="uk-subnav uk-subnav-divider" data-uk-margin>
-                            <li><a href="{% url 'home:legal_view' %}">Legal Documentations</a></li>
-                            <li><a href="{% url 'home:faqs_view' %}">FAQs</a></li>
-                            <li><a href="{% url 'home:about_view' %}">About</a></li>
-                            <li><a href="{% url 'home:contact_view' %}">Contact</a></li>
+                            <ul class="uk-subnav uk-subnav-divider" data-uk-margin>
+                                {% comment %} <li><a href="{% url 'home:faqs_view' %}">FAQs</a></li> {% endcomment %}
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="{% url 'home:about_view' %}">About</a></li>
+                                <li><a href="{% url 'home:contact_view' %}">Contact</a></li>
+                            </ul>
                         </ul>
                     </div>
 
                     <div id="mobileshow">
-                        <a target="_blank" href="#" class="social-link" style="background-color: #d64742; margin: 5px;"><i class="fab fa-youtube fab-icon"></i>Youtube</a>
-                        <a target="_blank" href="#" class="social-link" style="background-color: #075e54; margin: 5px;"><i class="fab fa-whatsapp fab-icon"></i>WhatsApp</a>
-                        <a target="_blank" href="#" class="social-link" style="background-color: #DD2A7B; margin: 5px;"><i class="fab fa-instagram fab-icon"></i>Instagram</a>
+                        <a target="_blank" href="https://youtube.com/@Preshbae_Forex" class="social-link" style="background-color: #d64742; margin: 5px;"><i class="fab fa-youtube fab-icon"></i>Youtube</a>
+                        <a target="_blank" href="https://wa.me/2349023899368" class="social-link" style="background-color: #075e54; margin: 5px;"><i class="fab fa-whatsapp fab-icon"></i>WhatsApp</a>
+                        <a target="_blank" href="https://instagram.com/preshbae_forex" class="social-link" style="background-color: #DD2A7B; margin: 5px;"><i class="fab fa-instagram fab-icon"></i>Instagram</a>
                     </div>
                 </div>
 
@@ -294,7 +297,7 @@
 
                 <p class="copyright-text" style="text-align: center; margin-top: 50px;">©2022 PreshForex Academy. All Rights Reserved.</p>
 
-                <p class="copyright-text" style="text-align: center; margin-top: 30px;">SiteCredit: <a href="wa.me/2349086022042">Aiby Technologies</a></p>
+                <p class="copyright-text" style="text-align: center; margin-top: 30px;">SiteCredit: <a href="https://wa.me/2349086022042">Aiby Technologies</a></p>
             </div>
         </div>
         <!-- footer content end -->
