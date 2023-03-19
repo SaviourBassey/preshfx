@@ -30,9 +30,9 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 
 # ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = ["127.0.0.1", "web-production-731f.up.railway.app", "www.preshforexacademy.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "web-production-731f.up.railway.app", "www.preshforexacademy.com", "presh-fx.onrender.com"]
 
-CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1", "https://www.preshforexacademy.com", "https://web-production-731f.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1", "https://www.preshforexacademy.com", "https://web-production-731f.up.railway.app", "https://presh-fx.onrender.com"]
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
